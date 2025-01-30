@@ -1,32 +1,57 @@
-<!-- asientos.html -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teatro - Selección de Asientos</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/asientos.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Seleccione sus Asientos</h1>
+      <div class="header">
+        <h1>Seleccione sus Asientos</h1>
+      </div>
+      <div class="seats-container">
+        <div class="datetime-selector">
+          <label>Fecha: <input type="date" id="show-date" /></label>
+          <label
+            >Hora:
+            <select id="show-time">
+              <option value="15:00">15:00</option>
+              <option value="19:00">19:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+          </label>
         </div>
-        <div class="seats-container">
-            <div class="datetime-selector">
-                <label>Fecha: <input type="date" id="show-date"></label>
-                <label>Hora: 
-                    <select id="show-time">
-                        <option value="15:00">15:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="21:00">21:00</option>
-                    </select>
-                </label>
-            </div>
-            <div class="seats-grid" id="seats-grid"></div>
-            <button class="btn" onclick="continueToSummary()">Continuar</button>
+
+        <div class="seats-grid" id="seats-grid"></div>
+        <div class="seat-legend">
+          <div class="legend-item">
+            <div class="legend-color legend-available"></div>
+            <span class="legend-text">Disponible</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color legend-selected"></div>
+            <span class="legend-text">Seleccionado</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color legend-occupied"></div>
+            <span class="legend-text">Ocupado</span>
+          </div>
         </div>
+        <button class="btn" onclick="volverASeleccionarPeliculas()">
+          Volver a Seleccionar Película
+        </button>
+
+        <button class="btn" onclick="continueToSummary()">Continuar</button>
+      </div>
     </div>
+
+    <script>
+      function volverASeleccionarPeliculas() {
+        window.location.href = "funciones.html";
+      }
+    </script>
     <script src="../js/asientos.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,90 @@
+.contact {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background-color: #3e3e47;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  background-color: #4e4e58;
+}
+
+.contact-item i {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-item div {
+  text-align: center;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.contact-item:nth-child(1) {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+.contact-item:nth-child(2) {
+  background: linear-gradient(135deg, #3b5998, #8b9dc3);
+}
+
+/* Instagram */
+.contact-item:nth-child(3) {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+.contact-item:nth-child(4) {
+  background: linear-gradient(45deg, #ff6600, #ffcc00);
+}
+.contact-item a:hover {
+  color: #fff;
+}

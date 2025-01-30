@@ -1,0 +1,151 @@
+/* Estilos generales mantenidos del CSS anterior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+  color: #fff;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+}
+
+.header h1 {
+  text-align: center;
+  color: #fbbf24;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilos mejorados para el resumen */
+.summary {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summary img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#summary-content {
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+#summary-content p {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.75rem;
+}
+
+#summary-content p:last-child {
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#summary-content strong {
+  color: #be185d;
+}
+
+.btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem 2rem;
+  background-color: #be185d;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  margin: 1.5rem auto 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #9d174d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(190, 24, 93, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .summary {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #summary-content {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.summary {
+  animation: fadeIn 0.5s ease-out;
+}

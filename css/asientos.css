@@ -1,0 +1,201 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+  color: #fff;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+}
+
+.header h1 {
+  text-align: center;
+  color: #fbbf24;
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn:first-of-type {
+  background: transparent;
+  border: 1px solid #be185d;
+  color: #ec4899;
+}
+
+.btn:first-of-type:hover {
+  background-color: #4c0519;
+  color: #f9a8d4;
+}
+
+.btn:last-of-type {
+  background-color: #be185d;
+  color: white;
+  margin: 10px;
+}
+
+.btn:last-of-type:hover {
+  background-color: #9d174d;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.datetime-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.datetime-selector label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.datetime-selector input,
+.datetime-selector select {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: white;
+  min-width: 150px;
+}
+
+.datetime-selector input:focus,
+.datetime-selector select:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.5rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.seat {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(22, 163, 74, 0.2);
+  color: #4ade80;
+}
+
+.seat:hover:not(.occupied) {
+  background-color: rgba(22, 163, 74, 0.3);
+}
+
+.seat.selected {
+  background-color: #22c55e;
+  color: white;
+}
+
+.seat.occupied {
+  background-color: rgba(127, 29, 29, 0.5);
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+.legend-text {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.legend-available {
+  background-color: rgba(22, 163, 74, 0.2);
+}
+
+.legend-selected {
+  background-color: #22c55e;
+}
+
+.legend-occupied {
+  background-color: rgba(127, 29, 29, 0.5);
+}
+
+@media (max-width: 640px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .seats-grid {
+    gap: 0.25rem;
+  }
+
+  .seat {
+    font-size: 0.75rem;
+  }
+
+  .datetime-selector {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

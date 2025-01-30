@@ -1,34 +1,74 @@
 <!-- categorias.html -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teatro - Categorías</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/categorias.css" />
+    <link rel="stylesheet" href="../css/style-btn-funciones.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Seleccione una Categoría</h1>
+      <div class="header">
+        <h1>Seleccione una Categoría</h1>
+      </div>
+      <div class="categories">
+        <div class="category-card" onclick="redirectToShow('comedia')">
+          <h2>Comedia</h2>
+          <p>Risas y diversión garantizada</p>
         </div>
-        <div class="categories">
-            <div class="category-card" onclick="redirectToShow('comedia')">
-                <h2>Comedia</h2>
-                <p>Risas y diversión garantizada</p>
-            </div>
-            <div class="category-card" onclick="redirectToShow('drama')">
-                <h2>Drama</h2>
-                <p>Historias que te conmoverán</p>
-            </div>
-            <div class="category-card" onclick="redirectToShow('musical')">
-                <h2>Musical</h2>
-                <p>Espectáculos que te harán vibrar</p>
-            </div>
+        <div class="category-card" onclick="redirectToShow('drama')">
+          <h2>Drama</h2>
+          <p>Historias que te conmoverán</p>
         </div>
+        <div class="category-card" onclick="redirectToShow('musical')">
+          <h2>Musical</h2>
+          <p>Espectáculos que te harán vibrar</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('suspenso')">
+          <h2>Suspenso</h2>
+          <p>La tensión nunca falta</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('romance')">
+          <h2>Romance</h2>
+          <p>Historias de amor que te atraparán</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('aventura')">
+          <h2>Aventura</h2>
+          <p>Explora mundos increíbles</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('ciencia_ficcion')">
+          <h2>Ciencia Ficción</h2>
+          <p>Viajes al futuro y más allá</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('fantasia')">
+          <h2>Fantasía</h2>
+          <p>Magia y criaturas fantásticas</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('terror')">
+          <h2>Terror</h2>
+          <p>¡Prepárate para gritar!</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('accion')">
+          <h2>Acción</h2>
+          <p>Adrenalina y emoción sin límites</p>
+        </div>
+        <div class="category-card" onclick="redirectToShow('danza')">
+          <h2>Danza</h2>
+          <p>Pasión y energía en cada paso</p>
+        </div>
+      </div>
+      <button class="btn-return-inicio" onclick="volverALaPaginaPrincipal()">
+        Regresar al Inicio
+      </button>
     </div>
-    
+
+    <script>
+      function volverALaPaginaPrincipal() {
+        window.location.href = "../index.html";
+      }
+    </script>
     <script src="../js/categorias.js"></script>
-    
-</body>
+  </body>
 </html>

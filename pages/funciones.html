@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teatro - Funciones</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/funciones.css" />
+    <link rel="stylesheet" href="../css/style-btn-funciones.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Funciones Disponibles</h1>
-        </div>
-        <div class="shows" id="shows">
-          
-        </div>
+      <div class="header">
+        <h1>Funciones Disponibles</h1>
+      </div>
+      <div class="shows" id="shows"></div>
+      <br /><br />
+      <button class="btn-regreso" onclick="volverACategorias()">
+        Volver a Categorías
+      </button>
     </div>
+
+    <script>
+      function volverACategorias() {
+        window.location.href = "categorias.html";
+      }
+    </script>
     <script src="../js/funciones.js"></script>
-</body>
+  </body>
 </html>
