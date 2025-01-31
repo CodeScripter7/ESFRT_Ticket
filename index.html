@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="" />
+    <meta property="og:title" content="Quantum" />
+    <meta
+      property="og:description"
+      content="Descubre la magia de las artes escénicas"
+    />
+    <meta property="og:image" content="https://imgur.com/a/keFWZbQ" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="quantum logo" />
+    <title>Quantum Leap</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="img/image-removebg-preview (1).png" alt="" />
+        </div>
+        <div id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Inicio</a>
+          <a href="#proximas-obras">Próximas Obras</a>
+          <a href="#sobre-nosotros">Sobre Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Bienvenidos a Quantum Leap</h1>
+        <p>Descubre la magia de las artes escénicas</p>
+        <a href="pages/categorias.html" class="btn-hero">Comprar Entradas</a>
+      </div>
+    </div>
+    <hr class="divider" />
+    <section id="proximas-obras" class="featured-shows">
+      <h2 class="subtitle">Próximas Obras</h2>
+      <div class="shows-grid">
+        <div class="show-preview">
+          <img
+            src="img/LaDivinaComedia.jpg"
+            style="height: auto"
+            alt="El Inspector"
+          />
+          <h3>La Divina Comedia</h3>
+          <p>Una comedia que te hará reír sin parar</p>
+          <span class="date">Próximamente - 20:00</span>
+        </div>
+        <div class="show-preview">
+          <img
+            src="img/Romeo&Julieta.jpg"
+            style="height: auto"
+            alt="El Fantasma De La Opera"
+          />
+          <h3>El Fantasma de La Opera</h3>
+          <p>El clasico romance de Shakespire</p>
+          <span class="date">El fin de semana</span>
+        </div>
+        <div class="show-preview">
+          <img
+            src="img/ElFantasmaDeLaOpera1.jpg"
+            style="height: auto"
+            alt="El Fantasma De La Opera"
+          />
+          <h3>El Fantasma de La Opera</h3>
+          <p>El musical mas aclamado de todos los tiempos</p>
+          <span class="date">El proximo mes</span>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <section id="sobre-nosotros" class="about">
+      <div class="about-content">
+        <h2 class="subtitle">Sobre Nuestro Teatro</h2>
+        <p style="font-size: 20px">
+          Con más de 30 años de trayectoria, Quantum Leap se ha convertido en un
+          ícono cultural de nuestra ciudad. Nuestro compromiso es ofrecer las
+          mejores experiencias teatrales, desde obras clásicas hasta
+          producciones contemporáneas innovadoras.
+        </p>
+        <div class="stats">
+          <div class="stat-item">
+            <i class="fas fa-theater-masks"></i>
+            <h3>500+</h3>
+            <p>Obras Presentadas</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3>1M+</h3>
+            <p>Espectadores</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-star"></i>
+            <h3>30</h3>
+            <p>Años de Historia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <section id="galeria" class="gallery">
+      <h2 class="subtitle">Nuestra Galería</h2>
+      <div class="gallery-grid">
+        <img src="img/Memorable.jpg" style="height: auto" alt="Memorable" />
+        <img src="img/Bastidores.jpg" style="height: auto" alt="Bastidores" />
+        <img src="img/fachada.jpg" style="height: auto" alt="Fachada" />
+        <img src="img/Ovaciones.jpg" style="height: auto" alt="Ovaciones" />
+      </div>
+    </section>
+    <hr class="divider" />
+    <section id="contacto" class="contact">
+      <h2 class="subtitle">Contacto</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="https://wa.me/51903442272" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>¡Envíame un mensaje!</p>
+            </div>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a
+            href="https://www.facebook.com/QUANTUMdanzateatro/?locale=es_LA"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+            <div>
+              <h3>Facebook</h3>
+              <p>¡Visítame en Facebook!</p>
+            </div>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a
+            href="https://www.instagram.com/explore/locations/117786139/quantum-theatre/?locale=es_ES%2F"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+            <div>
+              <h3>Instagram</h3>
+              <p>¡Sígueme en Instagram!</p>
+            </div>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:info@quantumleap.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Correo</h3>
+              <p>¡Envíame un correo!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quantum Leap</h3>
+          <p>El mejor entretenimiento cultural de la ciudad</p>
+        </div>
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proximas-obras">Próximas Obras</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quantum Leap. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        let navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
