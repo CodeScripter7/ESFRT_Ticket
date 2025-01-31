@@ -6,6 +6,7 @@
     <title>Teatro - Resumen de Compra</title>
 
     <link rel="stylesheet" href="../css/resumen.css" />
+    <link rel="stylesheet" href="../css/style-btn-funciones.css" />
   </head>
   <body>
     <div class="container">
@@ -17,8 +18,16 @@
         <button class="btn" onclick="finalizePurchase()">
           Finalizar Compra
         </button>
+        <button class="btn-return-inicio" onclick="volverALaPaginaPrincipal()">
+          Cancelar Compra
+        </button>
       </div>
     </div>
+    <script>
+      function volverALaPaginaPrincipal() {
+        window.location.href = "../index.html";
+      }
+    </script>
     <script src="../js/resumen.js"></script>
   </body>
 </html>

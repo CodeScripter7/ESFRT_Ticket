@@ -76,38 +76,32 @@ body {
 #summary-content strong {
   color: #be185d;
 }
-
-.btn {
-  width: 100%;
-  max-width: 300px;
-  padding: 1rem 2rem;
-  background-color: #be185d;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  border: none;
-  margin: 1.5rem auto 0;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
 .btn:hover {
-  background-color: #9d174d;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.3);
+  background-color: #b8860b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(190, 24, 93, 0.3);
+  background-color: #8b1a3b;
+  transform: scale(0.98);
 }
-
+.btn-return-inicio,
+.btn {
+  display: block;
+  background-color: #800020;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 10px auto 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 300px;
+  border: none;
+}
 /* Responsive */
 @media (max-width: 640px) {
   .container {
