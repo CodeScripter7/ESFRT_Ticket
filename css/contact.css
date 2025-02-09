@@ -1,11 +1,8 @@
 .contact {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
   text-align: center;
 }
 
 .contact h2 {
-  font-size: 50px;
   font-weight: 600;
   margin-bottom: 20px;
 }

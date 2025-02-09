@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
   color: #fff;
   padding: 1rem;
 }
@@ -38,7 +37,7 @@ body {
 }
 
 .category-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(183 176 176 / 25%);
   border-radius: 1rem;
   padding: 2rem;
   cursor: pointer;
@@ -79,7 +78,6 @@ body {
 }
 
 .category-card p {
-  color: #e5e7eb;
   font-size: 1rem;
   line-height: 1.5;
   position: relative;

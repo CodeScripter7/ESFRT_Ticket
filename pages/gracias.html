@@ -6,17 +6,56 @@
     <title>Teatro - ¡Gracias!</title>
     <link rel="stylesheet" href="../css/gracias.css" />
     <link rel="stylesheet" href="../css/style-btn-funciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/tema.css" />
   </head>
   <body>
+    <div class="theme-toggle-wrapper">
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
     <div class="container">
       <div class="header">
         <h1>¡Gracias por su Compra!</h1>
       </div>
       <div class="thanks">
         <h2>Su compra ha sido exitosa</h2>
-        <p>Le esperamos en el teatro</p>
+        <p id="userMessage">Le esperamos en el teatro</p>
+        <div id="purchaseDetails"></div>
         <a href="../index.html" class="btn">Volver al Inicio</a>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const purchaseDetails = document.getElementById("purchaseDetails");
+        const userMessage = document.getElementById("userMessage");
+
+        const lastPurchase = JSON.parse(localStorage.getItem("lastPurchase"));
+        if (lastPurchase) {
+          userMessage.textContent = `Le esperamos en el teatro, ${lastPurchase.customerName}`;
+          purchaseDetails.innerHTML = `
+            <h3>Detalles de su compra:</h3>
+            <p><strong>Obra:</strong> ${lastPurchase.show.title}</p>
+            <p><strong>Fecha:</strong> ${lastPurchase.date}</p>
+            <p><strong>Hora:</strong> ${lastPurchase.time}</p>
+            <p><strong>#Asiento seleccionado:</strong> ${lastPurchase.seats.join(
+              ", "
+            )}</p>
+          `;
+        }
+
+        // Clear the purchase info from localStorage after displaying it
+        localStorage.removeItem("lastPurchase");
+      });
+    </script>
+
+    <script src="../js/tema.js"></script>
   </body>
 </html>
