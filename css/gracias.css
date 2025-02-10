@@ -75,7 +75,6 @@ body {
   font-weight: bold;
   text-align: center;
   transition: all 0.3s ease;
-  width: 300px;
   border: none;
 }
 
@@ -143,7 +142,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 740px) {
   .container {
     padding: 1rem;
   }
@@ -169,5 +168,16 @@ body {
   .thanks .btn {
     padding: 0.875rem 1.75rem;
     font-size: 1rem;
+  }
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    backdrop-filter: none;
+    border-radius: 1rem;
   }
 }

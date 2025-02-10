@@ -98,7 +98,7 @@ body {
   font-weight: bold;
   text-align: center;
   transition: all 0.3s ease;
-  width: 300px;
+  width: 100%;
   border: none;
 }
 /* Responsive */
@@ -122,8 +122,23 @@ body {
   }
 
   .btn {
-    padding: 0.875rem 1.75rem;
     font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 400px;
+  }
+  .auth-modal {
+    width: 300px;
   }
 }
 
